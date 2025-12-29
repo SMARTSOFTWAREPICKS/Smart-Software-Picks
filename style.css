@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+/* EXACT BACKGROUND — DO NOT CHANGE */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: linear-gradient(135deg, #0b5ed7, #ff7a18);
+  background-attachment: fixed;
+  color: #fff;
+}
+
+/* TOP BARS */
+.top-bar {
+  position: fixed;
+  width: 100%;
+  padding: 14px 18px;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.page-name {
+  top: 0;
+  background: rgba(0,0,0,0.35);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.options-bar {
+  top: 52px;
+  background: rgba(0,0,0,0.25);
+  gap: 20px;
+}
+
+.options-bar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* HERO */
+.hero {
+  padding: 140px 20px 40px;
+  text-align: center;
+}
+
+.hero-bg-text {
+  transition: opacity 0.35s ease;
+}
+
+/* CARD LIST */
+.card-list {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  position: relative;
+  z-index: 1;
+}
+
+/* CARD (UNCHANGED DESIGN) */
+.card {
+  display: flex;
+  gap: 16px;
+  background: rgba(255,255,255,0.14);
+  border-radius: 20px;
+  padding: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  backdrop-filter: blur(8px);
+}
+
+/* ICON */
+.icon-box {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+/* TEXT */
+.card-content h3 {
+  margin: 0 0 6px;
+}
+
+.card-content p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* INFO SECTIONS */
+.info-section {
+  padding: 40px 10px;
+  opacity: 0.9;
+}
+
+/* COPYRIGHT */
+.copyright {
+  padding: 40px 10px 80px;
+  font-size: 13px;
+  opacity: 0.7;
+  text-align: center;
+}

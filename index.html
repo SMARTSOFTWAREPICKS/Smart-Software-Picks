@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Software Picks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TOP BAR 1 -->
+<header class="top-bar page-name">
+  Smart Software Picks
+</header>
+
+<!-- TOP BAR 2 -->
+<header class="top-bar options-bar">
+  <a href="#categories">Categories</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</header>
+
+<!-- HERO TEXT -->
+<section class="hero">
+  <div class="hero-bg-text" id="heroText">
+    <h1>Smart Software Picks</h1>
+    <p>Discover smart tools that save time, boost income, and scale ideas.</p>
+  </div>
+</section>
+
+<!-- CARDS FLOW -->
+<section id="categories" class="card-list">
+
+  <div class="card">
+    <div class="icon-box">⚙️</div>
+    <div class="card-content">
+      <h3>AI Marketing Tool</h3>
+      <p>Automate campaigns and convert leads faster.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="icon-box">📊</div>
+    <div class="card-content">
+      <h3>Analytics Software</h3>
+      <p>Track performance and make data-driven decisions.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="icon-box">💼</div>
+    <div class="card-content">
+      <h3>Business Automation</h3>
+      <p>Save hours every week with smart workflows.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="icon-box">🔐</div>
+    <div class="card-content">
+      <h3>Security Tools</h3>
+      <p>Protect systems, users, and sensitive data.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="icon-box">📅</div>
+    <div class="card-content">
+      <h3>Productivity Tools</h3>
+      <p>Organize tasks and manage time effectively.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="icon-box">☁️</div>
+    <div class="card-content">
+      <h3>Cloud Services</h3>
+      <p>Store, sync, and scale your projects online.</p>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="info-section">
+    <h3>About</h3>
+    <p>Smart Software Picks helps users discover powerful software tools for growth and productivity.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="info-section">
+    <h3>Contact</h3>
+    <p>Email: info@smartsoftwarepicks.com</p>
+  </section>
+
+  <!-- COPYRIGHT -->
+  <footer class="copyright">
+    © 2025 Smart Software Picks. All rights reserved.
+  </footer>
+
+</section>
+
+<script>
+const heroText = document.getElementById("heroText");
+const cardList = document.querySelector(".card-list");
+
+window.addEventListener("scroll", () => {
+  const heroBottom = heroText.getBoundingClientRect().bottom;
+  const cardsTop = cardList.getBoundingClientRect().top;
+
+  if (cardsTop <= heroBottom) {
+    heroText.style.opacity = "0";
+  } else {
+    heroText.style.opacity = "1";
+  }
+});
+</script>
+
+</body>
+</html>

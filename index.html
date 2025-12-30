@@ -10,28 +10,30 @@
 
 <!-- TOP BAR 1 -->
 <header class="top-bar page-name">
-  Smart Software Picks
+  <div class="logo">Smart Software Picks</div>
 </header>
 
 <!-- TOP BAR 2 -->
 <header class="top-bar options-bar">
-  <a href="#categories">Categories</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
+  <nav>
+    <a href="#categories">Categories</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </nav>
 </header>
 
-<!-- HERO TEXT -->
+<!-- HERO -->
 <section class="hero">
-  <div class="hero-bg-text" id="heroText">
+  <div class="hero-bg-text">
     <h1>Smart Software Picks</h1>
     <p>Discover smart tools that save time, boost income, and scale ideas.</p>
   </div>
 </section>
 
-<!-- CARDS FLOW -->
+<!-- CARDS -->
 <section id="categories" class="card-list">
 
-  <div class="card">
+  <div class="card ai">
     <div class="icon-box">⚙️</div>
     <div class="card-content">
       <h3>AI Marketing Tool</h3>
@@ -39,7 +41,7 @@
     </div>
   </div>
 
-  <div class="card">
+  <div class="card analytics">
     <div class="icon-box">📊</div>
     <div class="card-content">
       <h3>Analytics Software</h3>
@@ -47,7 +49,7 @@
     </div>
   </div>
 
-  <div class="card">
+  <div class="card automation">
     <div class="icon-box">💼</div>
     <div class="card-content">
       <h3>Business Automation</h3>
@@ -55,62 +57,53 @@
     </div>
   </div>
 
-  <div class="card">
-    <div class="icon-box">🔐</div>
+  <div class="card ecommerce">
+    <div class="icon-box">🛒</div>
     <div class="card-content">
-      <h3>Security Tools</h3>
-      <p>Protect systems, users, and sensitive data.</p>
+      <h3>E-commerce Tools</h3>
+      <p>Sell products and manage payments easily.</p>
     </div>
   </div>
 
-  <div class="card">
-    <div class="icon-box">📅</div>
+  <div class="card seo">
+    <div class="icon-box">🌐</div>
     <div class="card-content">
-      <h3>Productivity Tools</h3>
-      <p>Organize tasks and manage time effectively.</p>
+      <h3>SEO Tools</h3>
+      <p>Increase organic traffic and rankings.</p>
     </div>
   </div>
 
-  <div class="card">
-    <div class="icon-box">☁️</div>
+  <div class="card design">
+    <div class="icon-box">🎨</div>
     <div class="card-content">
-      <h3>Cloud Services</h3>
-      <p>Store, sync, and scale your projects online.</p>
+      <h3>Design Tools</h3>
+      <p>Create graphics and promotional content.</p>
     </div>
   </div>
-
-  <!-- ABOUT -->
-  <section id="about" class="info-section">
-    <h3>About</h3>
-    <p>Smart Software Picks helps users discover powerful software tools for growth and productivity.</p>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="info-section">
-    <h3>Contact</h3>
-    <p>Email: info@smartsoftwarepicks.com</p>
-  </section>
-
-  <!-- COPYRIGHT -->
-  <footer class="copyright">
-    © 2025 Smart Software Picks. All rights reserved.
-  </footer>
 
 </section>
 
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <h2>Contact</h2>
+  <p>Email: info@smartsoftwarepicks.com</p>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2025 Smart Software Picks. All rights reserved.</p>
+</footer>
+
+<!-- HERO FADE SCRIPT -->
 <script>
-const heroText = document.getElementById("heroText");
-const cardList = document.querySelector(".card-list");
+const heroText = document.querySelector('.hero-bg-text');
+const cards = document.querySelector('.card-list');
 
-window.addEventListener("scroll", () => {
+window.addEventListener('scroll', () => {
   const heroBottom = heroText.getBoundingClientRect().bottom;
-  const cardsTop = cardList.getBoundingClientRect().top;
+  const cardsTop = cards.getBoundingClientRect().top;
 
-  if (cardsTop <= heroBottom) {
-    heroText.style.opacity = "0";
-  } else {
-    heroText.style.opacity = "1";
-  }
+  heroText.style.opacity = cardsTop <= heroBottom ? '0' : '1';
 });
 </script>
 

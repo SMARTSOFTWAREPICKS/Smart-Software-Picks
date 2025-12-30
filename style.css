@@ -6,8 +6,9 @@
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  background: linear-gradient(135deg, #0b5ed7, #ff7a18);
+  background: linear-gradient(135deg, rgba(11,94,215,0.85) 35%, rgba(255,122,24,0.75) 100%);
   color: #fff;
+  background-attachment: fixed; /* This makes it stay fixed while scrolling cards */
 }
 
 /* TOP BARS */

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Software Picks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TOP BAR 1: Page Name -->
+<header class="top-bar page-name">
+  <div class="logo">Smart Software Picks</div>
+</header>
+
+<!-- TOP BAR 2: Options -->
+<header class="top-bar options-bar">
+  <nav>
+    <a href="#categories">Categories</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<!-- HERO / Background Text -->
+<section class="hero">
+  <div class="hero-bg-text">
+    <h1>Smart Software Picks</h1>
+    <p>Discover smart tools that save time, boost income, and scale ideas.</p>
+  </div>
+</section>
+
+<!-- CARD LIST -->
+<section id="categories" class="card-list">
+  <a href="ai-marketing.html" class="card">
+    <div class="icon-box" style="background: rgba(74,144,226,0.25)">⚙️</div>
+    <div class="card-content">
+      <h3>AI Marketing Tool</h3>
+      <p>Automate campaigns and convert leads faster.</p>
+    </div>
+  </a>
+
+  <a href="analytics.html" class="card">
+    <div class="icon-box" style="background: rgba(255,165,0,0.25)">📊</div>
+    <div class="card-content">
+      <h3>Analytics Software</h3>
+      <p>Track performance and make data-driven decisions.</p>
+    </div>
+  </a>
+
+  <a href="business-automation.html" class="card">
+    <div class="icon-box" style="background: rgba(0,200,83,0.25)">💼</div>
+    <div class="card-content">
+      <h3>Business Automation</h3>
+      <p>Save hours every week with smart workflows.</p>
+    </div>
+  </a>
+
+  <a href="ecommerce.html" class="card">
+    <div class="icon-box" style="background: rgba(255,193,7,0.25)">🛒</div>
+    <div class="card-content">
+      <h3>E-commerce Tools</h3>
+      <p>Manage online stores and payments efficiently.</p>
+    </div>
+  </a>
+
+  <a href="seo-tools.html" class="card">
+    <div class="icon-box" style="background: rgba(233,30,99,0.25)">🌐</div>
+    <div class="card-content">
+      <h3>SEO Tools</h3>
+      <p>Boost organic traffic and rank higher on search engines.</p>
+    </div>
+  </a>
+
+  <a href="design-tools.html" class="card">
+    <div class="icon-box" style="background: rgba(156,39,176,0.25)">🎨</div>
+    <div class="card-content">
+      <h3>Design & Creative Tools</h3>
+      <p>Create graphics, banners, and promotional content easily.</p>
+    </div>
+  </a>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="about-section">
+  <h2>About Us</h2>
+  <p>This site helps you find the best software tools for online marketing and business growth.</p>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact-section">
+  <h2>Contact Us</h2>
+  <p>Email: info@smartsoftwarepicks.com</p>
+  <p>Phone: +123 456 7890</p>
+</section>
+
+<!-- COPYRIGHT SECTION -->
+<footer class="footer">
+  <p>&copy; 2025 Smart Software Picks. All Rights Reserved.</p>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+const heroText = document.querySelector('.hero-bg-text');
+const firstCard = document.querySelector('.card-list .card');
+
+window.addEventListener('scroll', () => {
+  const textBottom = heroText.getBoundingClientRect().bottom;
+  const cardTop = firstCard.getBoundingClientRect().top;
+
+  if (cardTop <= textBottom) {
+    heroText.style.opacity = '0';
+  } else {
+    heroText.style.opacity = '1';
+  }
+});
+</script>
+
+</body>
+</html>

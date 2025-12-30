@@ -2,12 +2,11 @@
   box-sizing: border-box;
 }
 
-/* EXACT BACKGROUND — DO NOT CHANGE */
+/* EXACT BACKGROUND YOU APPROVED */
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
   background: linear-gradient(135deg, #0b5ed7, #ff7a18);
-  background-attachment: fixed;
   color: #fff;
 }
 
@@ -18,37 +17,37 @@ body {
   padding: 14px 18px;
   display: flex;
   justify-content: center;
+  align-items: center;
   backdrop-filter: blur(10px);
-  z-index: 1000;
 }
 
 .page-name {
   top: 0;
   background: rgba(0,0,0,0.35);
-  font-weight: bold;
-  font-size: 18px;
+  z-index: 1001;
+  font-weight: 600;
 }
 
 .options-bar {
   top: 52px;
   background: rgba(0,0,0,0.25);
-  gap: 20px;
+  z-index: 1000;
 }
 
 .options-bar a {
   color: #fff;
   text-decoration: none;
-  font-weight: 500;
+  margin: 0 14px;
 }
 
 /* HERO */
 .hero {
-  padding: 140px 20px 40px;
+  padding: 130px 20px 40px;
   text-align: center;
 }
 
 .hero-bg-text {
-  transition: opacity 0.35s ease;
+  transition: opacity 0.3s ease;
 }
 
 /* CARD LIST */
@@ -57,11 +56,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 26px;
-  position: relative;
-  z-index: 1;
 }
 
-/* CARD (UNCHANGED DESIGN) */
+/* CARD BASE */
 .card {
   display: flex;
   gap: 16px;
@@ -95,16 +92,25 @@ body {
   opacity: 0.9;
 }
 
-/* INFO SECTIONS */
-.info-section {
-  padding: 40px 10px;
-  opacity: 0.9;
+/* CARD ACCENT COLORS */
+.ai .icon-box { background: rgba(124,58,237,0.4); }
+.analytics .icon-box { background: rgba(14,165,233,0.4); }
+.automation .icon-box { background: rgba(34,197,94,0.4); }
+.ecommerce .icon-box { background: rgba(30,64,175,0.4); }
+.seo .icon-box { background: rgba(249,115,22,0.4); }
+.design .icon-box { background: rgba(236,72,153,0.4); }
+
+/* CONTACT */
+.contact-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: rgba(0,0,0,0.15);
 }
 
-/* COPYRIGHT */
-.copyright {
-  padding: 40px 10px 80px;
-  font-size: 13px;
-  opacity: 0.7;
+/* FOOTER */
+.footer {
+  padding: 30px 20px;
   text-align: center;
+  background: rgba(0,0,0,0.25);
+  font-size: 14px;
 }

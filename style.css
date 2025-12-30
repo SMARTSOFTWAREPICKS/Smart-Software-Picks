@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  /* exact gradient you confirmed working from screenshot */
+  background: linear-gradient(135deg, #0b5ed7, #ff7a18);
+  color: #fff;
+}
+
+/* TOP BARS */
+.top-bar {
+  position: fixed;
+  width: 100%;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.page-name {
+  top: 0;
+  justify-content: center;
+  background: rgba(0,0,0,0.35);
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 1001;
+}
+
+.options-bar {
+  top: 50px; /* height of the first top bar */
+  justify-content: center;
+  background: rgba(0,0,0,0.25);
+  z-index: 1000;
+}
+
+.options-bar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+/* HERO */
+.hero {
+  padding: 120px 20px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.hero-bg-text {
+  position: relative;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* CARD LIST */
+.card-list {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  position: relative;
+  z-index: 2; /* above hero text but scrolls under options-bar visually */
+}
+
+.card {
+  display: flex;
+  gap: 16px;
+  background: rgba(255,255,255,0.14);
+  border-radius: 20px;
+  padding: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  backdrop-filter: blur(8px);
+  transition: transform 0.25s ease;
+  text-decoration: none; /* for anchor cards */
+  color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* ICON */
+.icon-box {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+/* TEXT */
+.card-content h3 {
+  margin: 0 0 6px;
+}
+
+.card-content p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* ABOUT SECTION */
+.about-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: rgba(0,0,0,0.15);
+}
+
+/* CONTACT SECTION */
+.contact-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: rgba(0,0,0,0.15);
+}
+
+/* FOOTER */
+.footer {
+  padding: 30px 20px;
+  text-align: center;
+  background: rgba(0,0,0,0.25);
+  font-size: 14px;
+}

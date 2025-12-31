@@ -1,76 +1,161 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Marketing Automation</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Business Automation | Smart Software Picks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-body {
-  font-family: system-ui, sans-serif;
-  color: white;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    /* BUSINESS AUTOMATION COLOR – SAME BASE STYLE */
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: linear-gradient(
+        135deg,
+        rgba(11, 94, 215, 0.9),
+        rgba(14, 165, 233, 0.85),
+        rgba(255, 255, 255, 0.15)
+      );
+      color: #fff;
+    }
 
-  /* OLD STYLE TEXTURE (layered shades / squares feel) */
-  background:
-    linear-gradient(135deg, rgba(255,255,255,0.08) 25%, transparent 25%) ,
-    linear-gradient(225deg, rgba(255,255,255,0.08) 25%, transparent 25%),
-    linear-gradient(45deg, rgba(255,255,255,0.08) 25%, transparent 25%),
-    linear-gradient(315deg, rgba(255,255,255,0.08) 25%, transparent 25%),
-    linear-gradient(135deg, #22c55e, #86efac);
+    /* FIXED TOP BAR */
+    .top-bar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 16px;
+      text-align: center;
+      background: rgba(0,0,0,0.35);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      font-weight: 600;
+    }
 
-  background-size: 40px 40px;
-  background-position: 0 0, 0 20px, 20px -20px, -20px 0, 0 0;
-}
+    /* PAGE CONTENT */
+    .page {
+      padding: 120px 20px 80px;
+      max-width: 900px;
+      margin: auto;
+    }
 
-.card {
-  max-width: 420px;
-  padding: 28px;
-  border-radius: 20px;
-  background: rgba(255,255,255,0.15);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
-  text-align: center;
-}
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 20px;
+      background: rgba(14, 165, 233, 0.35);
+      font-size: 13px;
+      margin-bottom: 16px;
+    }
 
-.icon-box {
-  width: 64px;
-  height: 64px;
-  margin: 0 auto 16px;
-  border-radius: 16px;
-  background: rgba(34,197,94,0.4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-}
+    h1 {
+      margin-top: 0;
+      font-size: 32px;
+    }
 
-h1 {
-  font-size: 26px;
-  margin-bottom: 10px;
-}
+    p {
+      line-height: 1.6;
+      opacity: 0.95;
+    }
 
-p {
-  font-size: 16px;
-  opacity: 0.9;
-}
-</style>
+    /* FEATURE BOX */
+    .feature-box {
+      margin-top: 30px;
+      padding: 20px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.14);
+      backdrop-filter: blur(8px);
+    }
+
+    .feature-box h3 {
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    /* CTA BUTTON */
+    .cta {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .cta a {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 30px;
+      background: linear-gradient(
+        135deg,
+        rgba(14, 165, 233, 0.95),
+        rgba(11, 94, 215, 0.95)
+      );
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .cta a:hover {
+      opacity: 0.9;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 13px;
+      opacity: 0.7;
+    }
+  </style>
 </head>
 
 <body>
-  <div class="card">
-    <div class="icon-box">⚡</div>
-    <h1>Marketing Automation</h1>
-    <p>Automate workflows, follow-ups, and campaigns to save time and scale faster.</p>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    Business Automation
   </div>
+
+  <!-- CONTENT -->
+  <div class="page">
+    <span class="badge">Automation • Workflows • Efficiency</span>
+
+    <h1>Business Automation</h1>
+
+    <p>
+      Streamline operations, reduce manual work, and scale faster using
+      business automation tools built for modern teams.
+    </p>
+
+    <div class="feature-box">
+      <h3>What this tool helps you do</h3>
+      <ul>
+        <li>Automate repetitive business processes</li>
+        <li>Connect apps and workflows seamlessly</li>
+        <li>Improve efficiency and productivity</li>
+        <li>Reduce human errors and save time</li>
+      </ul>
+    </div>
+
+    <div class="cta">
+      <a href="#">
+        Try Business Automation →
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Smart Software Picks. All rights reserved.
+  </footer>
+
 </body>
-</html>
+</html>           

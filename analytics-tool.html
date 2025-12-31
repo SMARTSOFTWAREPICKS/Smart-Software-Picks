@@ -1,29 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Analytics Tools</title>
+<meta charset="UTF-8">
+<title>AI Marketing Tool</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-body {
-  margin: 0;
-  font-family: system-ui;
-  background: linear-gradient(135deg, #38bdf8, #bae6fd);
-  color: white;
-}
+  /* GENERAL RESET */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
-.card {
-  margin: 80px auto;
-  max-width: 420px;
-  background: rgba(255,255,255,0.15);
-  padding: 28px;
-  border-radius: 20px;
-}
+  body {
+    font-family: system-ui, sans-serif;
+    color: #fff;
+    /* Blended textured background like main page, slight variation for AI Marketing */
+    background: linear-gradient(135deg, rgba(124,58,237,0.9), rgba(255,255,255,0.05)), 
+                linear-gradient(135deg, #0b5ed7, #ff7a18);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 480px;
+    padding: 32px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+    text-align: center;
+  }
+
+  .card h1 {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .card p {
+    font-size: 16px;
+    opacity: 0.9;
+  }
+
+  /* ICON BOX like main page */
+  .icon-box {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    background: rgba(124,58,237,0.4); /* AI color tint */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    margin: 0 auto 16px;
+  }
+
 </style>
 </head>
-
 <body>
   <div class="card">
-    <h1>📊 Analytics Tools</h1>
-    <p>Track performance, traffic, and growth with clarity.</p>
+    <div class="icon-box">⚙️</div>
+    <h1>AI Marketing Tool</h1>
+    <p>Automate campaigns and convert leads faster with smart AI-powered tools.</p>
   </div>
 </body>
-</html>
+</html>        

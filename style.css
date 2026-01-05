@@ -6,7 +6,8 @@
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  background: linear-gradient(135deg, #0b5ed7, #ff7a18);
+ background-col: #0D6EFD;
+  color: #FFFFFF;
   background-attachment: fixed;
   color: #fff;
 }

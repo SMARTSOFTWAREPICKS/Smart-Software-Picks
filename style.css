@@ -6,9 +6,8 @@
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-    background-col: #0D6EFD;
-  color: #FFFFFF;
-  background-attachm: t: fi;
+  background-color: #0D6EFD; /* Soft Blue */
+  background-attachment: fixed;
   color: #fff;
 }
 

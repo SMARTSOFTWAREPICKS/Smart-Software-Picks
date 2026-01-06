@@ -2,122 +2,107 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Smart Software Picks</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Software Picks</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- TOP BAR 1 -->
-<header class="top-bar page-name">
-  <div class="logo">Smart Software Picks</div>
-</header>
-
-<!-- TOP BAR 2 -->
-<header class="top-bar options-bar">
-  <nav>
-    <a href="#categories">Categories</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-  </nav>
-</header>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-bg-text">
-    <h1>Smart Software Picks</h1>
-    <p>Discover smart tools that save time, boost income, and scale ideas.</p>
-  </div>
-</section>
-
-<!-- CARDS -->
-<section id="categories" class="card-list">
-  
-<a href="ai-marketing-tools.html" class="card-link">
-  <div class="card ai">
-    <div class="icon-box">⚙️</div>
-    <div class="card-content">
-      <h3>AI Marketing Tool</h3>
-      <p>Automate campaigns and convert leads faster.</p>
+  <!-- HERO / BACKGROUND TEXT -->
+  <section class="hero">
+    <div class="hero-bg-text">
+      <h1>Smart Software Picks</h1>
+      <p>Discover smart tools that save time, boost income, and scale ideas.</p>
     </div>
-  </div>
-  </a>
+  </section>
 
-<a href="analytics-tool.html" class="card-link">
-  <div class="card analytics">
-    <div class="icon-box">📊</div>
-    <div class="card-content">
-<h3>analytics-tool</h3>
-<p>track performance and make data driving decisionss<p>
+  <!-- NAVIGATION / BIG CARDS -->
+  <section class="nav-cards">
+    <div class="card contact">
+      <div class="icon-box">📧</div>
+      <div class="card-content">
+        <h3>Contact</h3>
+        <p>Email: info@smartsoftwarepicks.com</p>
+      </div>
     </div>
-  </div>
-</a>
-  
-  <a href="business-automation.html" class="card-link">
-  <div class="card automation">
-    <div class="icon-box">💼</div>
-    <div class="card-content">
-      <h3>Business Automation</h3>
-      <p>Save hours every week with smart workflows.</p>
+    <div class="card about">
+      <div class="icon-box">ℹ️</div>
+      <div class="card-content">
+        <h3>About</h3>
+        <p>Learn about our mission and top software picks.</p>
+      </div>
     </div>
-  </div>
-</a>
-  
-  <a href="ecommerce-tools.html" class="card-link">
-  <div class="card ecommerce">
-    <div class="icon-box">🛒</div>
-    <div class="card-content">
-      <h3>E-commerce Tools</h3>
-      <p>Sell products and manage payments easily.</p>
+    <div class="card categories">
+      <div class="icon-box">🗂️</div>
+      <div class="card-content">
+        <h3>Categories</h3>
+        <p>AI, Analytics, E-commerce, SEO, Design & More.</p>
+      </div>
     </div>
-  </div>
-</a>
-  
-  <a href="seo-tools.html" class="card-link">
-  <div class="card seo">
-    <div class="icon-box">🌐</div>
-    <div class="card-content">
-      <h3>SEO Tools</h3>
-      <p>Increase organic traffic and rankings.</p>
-    </div>
-  </div>
-</a>
-  
-  <a href="design-creative-tools.html" class="card-link">
-  <div class="card design">
-    <div class="icon-box">🎨</div>
-    <div class="card-content">
-      <h3>Design Tools</h3>
-      <p>Create graphics and promotional content.</p>
-    </div>
-  </div>
-</a>
-  
-</section>
+  </section>
 
-<!-- CONTACT -->
-<section id="contact" class="contact-section">
-  <h2>Contact</h2>
-  <p>Email: info@smartsoftwarepicks.com</p>
-</section>
+  <!-- MAIN CARDS -->
+  <section class="card-list">
+    <a href="ai-tools.html">
+      <div class="card ai">
+        <div class="icon-box">🤖</div>
+        <div class="card-content">
+          <h3>AI Marketing Tools</h3>
+          <p>Automate campaigns and convert leads faster.</p>
+        </div>
+      </div>
+    </a>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <p>© 2025 Smart Software Picks. All rights reserved.</p>
-</footer>
+    <a href="analytics-software.html">
+      <div class="card analytics">
+        <div class="icon-box">📊</div>
+        <div class="card-content">
+          <h3>Analytics Software</h3>
+          <p>Track performance and make data-driven decisions.</p>
+        </div>
+      </div>
+    </a>
 
-<!-- HERO FADE SCRIPT -->
-<script>
-const heroText = document.querySelector('.hero-bg-text');
-const cards = document.querySelector('.card-list');
+    <a href="business-automation.html">
+      <div class="card automation">
+        <div class="icon-box">💼</div>
+        <div class="card-content">
+          <h3>Business Automation</h3>
+          <p>Save hours every week with smart workflows.</p>
+        </div>
+      </div>
+    </a>
 
-window.addEventListener('scroll', () => {
-  const heroBottom = heroText.getBoundingClientRect().bottom;
-  const cardsTop = cards.getBoundingClientRect().top;
+    <a href="ecommerce-tools.html">
+      <div class="card ecommerce">
+        <div class="icon-box">🛒</div>
+        <div class="card-content">
+          <h3>E-commerce Tools</h3>
+          <p>Manage online stores and payments efficiently.</p>
+        </div>
+      </div>
+    </a>
 
-  heroText.style.opacity = cardsTop <= heroBottom ? '0' : '1';
-});
-</script>
+    <a href="seo-tools.html">
+      <div class="card seo">
+        <div class="icon-box">🌐</div>
+        <div class="card-content">
+          <h3>SEO Tools</h3>
+          <p>Boost organic traffic and rank higher on search engines.</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="design-tools.html">
+      <div class="card design">
+        <div class="icon-box">🎨</div>
+        <div class="card-content">
+          <h3>Design & Creative Tools</h3>
+          <p>Create graphics, banners, and promotional content easily.</p>
+        </div>
+      </div>
+    </a>
+  </section>
 
 </body>
 </html>

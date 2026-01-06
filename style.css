@@ -5,101 +5,94 @@
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  /* Top white (small) + bottom blue (~80%) */
-  background: linear-gradient(to bottom, #ffffff 15%, #00BCD4 15%);
-  background-attachment: fixed;
-  color: #000;
-  min-height: 200vh; /* ensure scroll */
+  color: #fff;
+  background-color: #00BCD4; /* Your brand color */
+  background-attachment: scroll; /* Scrollable background */
 }
 
-/* HERO TEXT */
+/* HERO */
 .hero {
-  background: #ffffff;
-  padding: 40px 20px;
+  background: #ffffff; /* White top area */
+  padding: 100px 20px 40px;
   text-align: center;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
-  margin-bottom: 40px;
-}
-
-.hero h1 {
-  margin: 0 0 10px;
-  font-size: 36px;
-}
-
-.hero p {
-  margin: 0;
-  font-size: 16px;
   color: #333;
 }
 
-/* NAVIGATION CARDS: Contact / About / Categories */
+.hero-bg-text h1 {
+  margin-bottom: 10px;
+}
+
+.hero-bg-text p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* NAVIGATION / BIG CARDS */
 .nav-cards {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin-bottom: 40px;
+  padding: 20px;
 }
 
-.nav-card {
-  flex: 1;
-  max-width: 200px;
-  background: #ffffff;
-  padding: 28px 20px;
-  text-align: center;
-  border-radius: 20px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-  cursor: pointer;
-  transition: all 0.25s ease;
-}
-
-.nav-card:hover {
-  transform: translateY(-3px) scale(1.03);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.18);
-}
-
-.nav-card h3 {
-  margin: 0 0 10px;
-  font-size: 18px;
-}
-
-.nav-card p {
-  margin: 0;
-  font-size: 14px;
-  opacity: 0.85;
+.nav-cards .card {
+  background: #fff;
   color: #333;
+  padding: 20px;
+  border-radius: 20px;
+  width: 220px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
 }
 
-/* CARD LIST */
+.nav-cards .icon-box {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.nav-cards .icon-box:hover {
+  background: #ffffff;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* MAIN CARDS */
 .card-list {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 26px;
-  padding: 0 20px 60px;
+  padding: 40px 20px;
 }
 
-/* CARD BASE */
+.card-list a {
+  text-decoration: none;
+}
+
 .card {
   background: #ffffff;
+  color: #333;
   border-radius: 20px;
-  padding: 18px 24px;
-  width: 100%;
-  max-width: 500px;
+  padding: 18px;
+  width: 320px;
   box-shadow: 0 12px 30px rgba(0,0,0,0.18);
   display: flex;
   gap: 16px;
-  align-items: center;
   transition: all 0.25s ease;
 }
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
 }
 
-/* ICON */
 .icon-box {
   width: 54px;
   height: 54px;
@@ -119,15 +112,20 @@ body {
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
-/* TEXT */
 .card-content h3 {
   margin: 0 0 6px;
-  color: #000;
 }
 
 .card-content p {
   margin: 0;
   font-size: 14px;
-  opacity: 0.85;
-  color: #333;
+  opacity: 0.9;
 }
+
+/* Card specific colors (optional tint) */
+.ai .icon-box { background: rgba(124,58,237,0.2); }
+.analytics .icon-box { background: rgba(14,165,233,0.2); }
+.automation .icon-box { background: rgba(34,197,94,0.2); }
+.ecommerce .icon-box { background: rgba(30,64,175,0.2); }
+.seo .icon-box { background: rgba(249,115,22,0.2); }
+.design .icon-box { background: rgba(236,72,153,0.2); }

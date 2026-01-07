@@ -1,86 +1,73 @@
 * {
   box-sizing: border-box;
-}
-
-/* BACKGROUND */
-body {
   margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* BODY */
+body {
   font-family: system-ui, sans-serif;
-  background-color: #00BCD4;
-  color: #000;
-  overflow-x: hidden;
+  background: #ffffff;
+  color: #0f172a;
 }
 
-/* HERO */
+/* HERO (WHITE TOP ~15%) */
 .hero {
-  background-color: #ffffff;
-  padding: 80px 20px 60px;
+  background: #ffffff;
+  padding: 40px 20px 50px;
   text-align: center;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
 }
 
-.hero h1 {
-  margin: 0 0 10px;
-  font-size: 36px;
-  color: #007B9E;
+.brand-name {
+  font-size: 32px;
+  font-weight: 700;
+  color: #00BCD4;
+  margin-bottom: 10px;
 }
 
-.hero p {
-  font-size: 18px;
-  color: #333;
+.hero-text {
+  font-size: 15px;
+  color: #0097a7;
+  max-width: 420px;
+  margin: 0 auto;
 }
 
-/* NAVIGATION LINKS */
-.nav-links {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin: 40px 0 20px;
+/* BLUE BACKGROUND FOR CARDS */
+.cards-section {
+  background: #00BCD4;
+  padding: 40px 0 70px;
 }
 
-.nav-links a {
-  text-decoration: none;
-  font-weight: 600;
-  color: #fff;
-  background: rgba(0,0,0,0.2);
-  padding: 10px 18px;
-  border-radius: 12px;
-  transition: all 0.3s ease;
-}
-
-.nav-links a:hover {
-  background: rgba(255,255,255,0.4);
-  color: #000;
-}
-
-/* CARDS LIST */
+/* CARD LIST (CENTERED) */
 .card-list {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 0 18px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 26px;
-  padding: 0 20px 80px;
 }
 
-/* INDIVIDUAL CARD */
+/* CARD */
 .card {
   display: flex;
-  align-items: center;
-  gap: 16px;
-  background: #fff;
+  gap: 14px;
+  background: #ffffff;
   border-radius: 20px;
   padding: 18px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
   text-decoration: none;
-  width: 100%;
-  max-width: 420px;
+  color: #0f172a;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 14px 35px rgba(0,0,0,0.2);
+  transform: translateY(-6px);
+  box-shadow: 0 22px 45px rgba(0,0,0,0.28);
 }
 
 /* ICON */
@@ -88,52 +75,66 @@ body {
   width: 54px;
   height: 54px;
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 24px;
-  transition: all 0.25s ease;
-  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.icon-box:hover {
-  background: #fff;
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+/* ICON HOVER (RAISED FEEL) */
+.card:hover .icon-box {
+  transform: translateY(-4px) scale(1.06);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
 }
 
-/* CARD CONTENT */
+/* TEXT */
 .card-content h3 {
-  margin: 0 0 6px;
-  color: #000;
+  margin-bottom: 6px;
+  font-size: 16px;
 }
 
 .card-content p {
-  margin: 0;
   font-size: 14px;
-  opacity: 0.85;
-  color: #555;
+  opacity: 0.9;
 }
 
-/* BIG CARDS (About / Contact / Footer) */
-.big-card {
-  background: #fff;
-  padding: 40px 20px;
-  border-radius: 20px;
-  margin: 40px auto;
-  max-width: 900px;
-  text-align: center;
+/* ICON COLORS */
+.ai .icon-box { background: rgba(124,58,237,0.35); }
+.analytics .icon-box { background: rgba(14,165,233,0.35); }
+.automation .icon-box { background: rgba(34,197,94,0.35); }
+.ecommerce .icon-box { background: rgba(30,64,175,0.35); }
+.seo .icon-box { background: rgba(249,115,22,0.35); }
+.design .icon-box { background: rgba(236,72,153,0.35); }
+
+/* ABOUT & CONTACT SECTION */
+.info-section {
+  background: #ffffff;
+  padding: 60px 18px;
+  max-width: 420px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.info-card {
+  background: #00BCD4;
+  color: #ffffff;
+  padding: 30px;
+  border-radius: 22px;
   box-shadow: 0 12px 30px rgba(0,0,0,0.18);
 }
 
-.big-card h2 {
-  margin-top: 0;
-  color: #007B9E;
+.info-card h2 {
+  margin-bottom: 12px;
 }
 
-.big-card p {
-  color: #333;
-  font-size: 16px;
-  opacity: 0.9;
+/* FOOTER */
+.footer {
+  background: #00BCD4;
+  color: #ffffff;
+  text-align: center;
+  padding: 16px;
+  font-size: 13px;
 }

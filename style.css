@@ -173,3 +173,16 @@ body {
   padding: 16px;
   font-size: 13px;
 }
+
+/* HEADER LINKS ON BLUE BACKGROUND */
+.cards-header a {
+  color: #ffffff;          /* force white text */
+  text-decoration: none;   /* remove underline */
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Optional hover effect (nice but subtle) */
+.cards-header a:hover {
+  opacity: 0.85;
+}
